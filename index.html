@@ -1,262 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Personal Portfolio Website Design | Codehal</title>
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
+        <title>Responsive Portfolio Website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Alexa</a>
 
-    <!-- box icons -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-</head>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
 
-<body>
-    <!-- header design -->
-    <header class="header">
-        <a href="#" class="logo">Zaden.</a>
+                <div class="nav_btns">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <a href="https://www.dribble.com/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-dribbble"></i>
+                            </a>
+                            <a href="https://www.github.com/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <!-- home section design -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hi, I'm <span>Zaden Connell</span></h1>
-            <div class ="text-animate">
-                <h3>Software Engineer</h3>
-            </div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ipsa eos, eius laudantium mollitia 
-            rerum enim alias non dolorem molestiae harum magni velit tenetur nobis cum, modi 
-            aspernatur tempora veritatis?</p>
-
-            <div class="btn-box">
-                <a href="#" class="btn">Hire Me</a>
-                <a href="#" class="btn">Let's Talk</a>
-            </div>
-
-        </div>
-
-        <div class="home-sci">
-            <a href="#"><i class="bx bxl-facebook"></i></a>
-            <a href="#"><i class="bx bxl-twitter"></i></a>
-            <a href="#"><i class="bx bxl-linkedin"></i></a>
-        </div>
-
-        <div class="home-imgHover"></div>
-    </section>
-
-    <!-- about section design -->
-    <section class="about" id="about">
-        <h2 class="heading">About <span>Me</span></h2>
-
-        <div class="about-img">
-            <img src="img/" alt="">
-            <span class="circle-spin"></span>
-        </div>
-
-        <div class="about-content">
-            <h3>Software Engineer!</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quo excepturi, 
-            ipsum repellendus aliquam hic accusamus sint sapiente id ea perspiciatis nulla! 
-            Sapiente blanditiis nemo recusandae maiores necessitatibus aperiam esse sunt quidem 
-            impedit dolorum non ipsum, sit aut saepe voluptatem quisquam consectetur vel, laboriosam 
-            adipisci odio obcaecati! Cumque, facere? Maxime magnam inventore aliquid consequuntur 
-            assumenda obcaecati numquam perspiciatis ex modi? Neque vero voluptatum modi, sed illum 
-            dicta fugit maxime pariatur at fugiat. Placeat aspernatur, debitis ducimus nisi 
-            exercitationem cumque adipisci perspiciatis quo? Molestias ipsam pariatur commodi 
-            quis possimus, natus perferendis beatae velit soluta maiores. Laborum maiores 
-            facere placeat veniam facilis.</p>
-
-            <div class="btn-box btns">
-                <a href="#" class="btn">Read More</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- education section design -->
-    <section class="education" id="education">
-        <h2 class="heading">My <span>Journey</span></h2>
-
-        <div class="education-row">
-            <div class="eduction column">
-                <h3 class="title">Education</h3>
-
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"></i>2021 - 2025</div>
-                            <h3>B.S. Computer Science - Liberty University</h3>
-                            <p>Minor in Business</p>
-                            <p>4.0 GPA</p>
-                            <p>Part of the Cyber Defense Club</p>
+                        <div class="home__img">
+                            
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="eduction column">
-                <h3 class="title">Experience</h3>
-            
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"></i>2023</div>
-                            <h3>Product Development Intern - Samaritan's Purse</h3>
-                            <p>Worked Full-Stack on Angular, MySQL, and C# applications</p>
-                        </div>
-                    </div>
-            
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"></i>2018 - 2019</div>
-                            <h3>Technology Intern - Mt. Vernon Baptist Church</h3>
-                            <p>Implemented a .NET script for YouTube Live</p>
-                            <p>Lead intern to Technology and A/V Director</p>
-                            <p>Managed volunteer base of 10+ people</p>
-                            <p>Created, planned, and executed the use of technology site-wide</p>
-                        </div>
-                    </div>
-            
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"></i>2019 - 2020</div>
-                            <h3>Youth Intern - Mt. Vernon Baptist Church</h3>
-                            <p>Implemented the use of new A/V technology</p>
-                            <p>Managed volunteer base of 15+ people</p>
-                            <p>Created an A/V workstation with new equipment, and training</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                
+            </section>
 
-    <!-- skills section design -->
-    <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills</span></h2>
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
 
-        <div class="skills-row">
-            <div class="skills-column">
-                <h3 class="title">Coding Skills</h3>
+            </section>
 
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>HTML <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section">
 
-                        <div class="progress">
-                            <h3>CSS <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+            </section>
 
-                        <div class="progress">
-                            <h3>JavaScript <span>65%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                
+            </section>
 
-                        <div class="progress">
-                            <h3>Python <span>75%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                
+            </section>
 
-            <div class="skills-column">
-                <h3 class="title">Professional Skills</h3>
-            
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>Web Design <span>95%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-            
-                        <div class="progress">
-                            <h3>Web Development <span>67%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-            
-                        <div class="progress">
-                            <h3>Graphic Design <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-            
-                        <div class="progress">
-                            <h3>SEO Marketing <span>60%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!--==================== PROJECT IN MIND ====================-->
+            <section class="project section">
 
-        </div>
-    </section>
+            </section>
 
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section">
+                
+            </section>
 
-        <form action="#">
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
-                    <span class="focus"></span>
-                </div>
-            </div>
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
 
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
-                    <span class="focus"></span>
-                </div>
-            </div>
+            </section>
+        </main>
 
-            <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <span class="focus"></span>
-            </div>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+         
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        
 
-            <div class="btn-box btns">
-                <button type="submit" class="btn">Submit</button>
-            </div>
-        </form>
-    </section>
+        <!--==================== SWIPER JS ====================-->
+        <script src=""></script>
 
-    <!-- footer section design -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2023 by Zaden Connell | All Rights Reserved.</p>
-        </div>
-
-        <div class="footer-iconTop">
-            <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
-</body>
-
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
