@@ -1,8 +1,5 @@
-# My Portfolio Website
+# Zaden's Portfolio
 ### Responsive Portfolio
+A clean and nice web portfolio for me. Includes almost everything needed to show. At first, my name, links to social networks and an image. Then the About section displays more information. Then the list of Skills. It also has a section where it shows some recent work. And at the bottom it has a form, and at the end with a footer.
 
-- Responsive Personal Portfolio Website Using HTML CSS & JavaScript
-- Smooth scrolling in each section.
-- Includes a light and dark mode.
-- Developed first with the Mobile First methodology, then for desktop.
-- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+<!-- ![preview img](/preview.png) -->
